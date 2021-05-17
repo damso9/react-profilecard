@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+.container {
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: whitesmoke;  
+}
+.dummy {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 20px;
+}
+#image1 {
+  width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  border: 2px dotted pink;
+  border-color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  padding: 10px;
+  margin-top: 30px;
+}
+
+h2, #bio {
+  text-align: center;
+}
+#bio {
+  font-size: 1.4em;
+}
+.myButton {
+  display: flex;
+  justify-content: center;
+}
+button {
+  margin: 10px;
+  color: black;
+  background: gainsboro;
+  padding: 20px 40px;
+  border: 0;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.love {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+#likeCounter {
+  font-size: 2.0em;
+  color: red;
+}
+span {
+  color: black;
+}
+.icon {
+  font-size: 2.0em;
+  margin: 10px;
+}
+
+.icon:hover {
+  color: purple;
+}
+footer {
+  display:flex;
+  justify-content: center;
+}
+#instagram {
+  color:red;
+}
+#twitter {
+  color:skyblue;
+}
+#linkedin {
+  color: skyblue;
+}
+#github {
+  color: black;
+}
+.icon:hover {
+  background: purple;
+  border-radius: 50%;
+}
+  section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+
+@media only screen and (max-width: 271px) {
+  .myButton {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+  button {
+      width: 90%;
+      background:blue;
+  }
+  
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 576px) {
+  .container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  section {
+      width: 100%;
+      background:linear-gradient(to top, #30cfd0 0%, #330867 100%);
+
+  }
+  #image1 {
+      width: 70%;
+      border-radius: 50%;
+  }
+  button {
+      padding: 10px 20px;
+  }
+  .icon {
+      font-size: 1.5em;
+  }
+}
